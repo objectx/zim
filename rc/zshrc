@@ -4,6 +4,9 @@
 # User configuration sourced by interactive shells
 #
 
+# Default is Emacs key bindnig
+bindkey -e
+
 # Source zim
 if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
@@ -12,3 +15,4 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/objectx/.sdkman"
 [[ -s "/Users/objectx/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/objectx/.sdkman/bin/sdkman-init.sh"
+
