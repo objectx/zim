@@ -51,6 +51,11 @@ path=(
   $path
 )
 
+fpath=(
+  ${HOME}/.zfunc
+  $(brew --prefix)/Homebrew/completions/zsh
+  $fpath
+)
 #
 # Less
 #
