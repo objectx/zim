@@ -52,6 +52,7 @@ typeset -gU cdpath fpath mailpath path
 path=(
   ${HOME}/.local/bin
   ${HOME}/.cargo/bin
+  ${HOME}/.poetry/bin
   $(python3 -m site --user-base)/bin
   ${HOME}/Workspace/go/bin
   /usr/local/opt/coreutils/libexec/gnubin
@@ -95,3 +96,5 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 #
 export GOPATH=${HOME}/Workspace/go
 
+
+export PATH="$HOME/.poetry/bin:$PATH"
