@@ -50,19 +50,18 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  ${HOME}/.nix-profile/bin
   ${HOME}/.local/bin
   ${HOME}/.cargo/bin
   ${HOME}/.poetry/bin
-  $(python3 -m site --user-base)/bin
+  $(${HOME}/.nix-profile/bin/python3 -m site --user-base)/bin
   ${HOME}/Workspace/go/bin
-  /usr/local/opt/coreutils/libexec/gnubin
   /usr/local/{bin,sbin}
   $path
 )
 
 fpath=(
   ${HOME}/.zfunc
-  $(brew --prefix)/Homebrew/completions/zsh
   $fpath
 )
 #
@@ -96,5 +95,3 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 #
 export GOPATH=${HOME}/Workspace/go
 
-
-export PATH="$HOME/.poetry/bin:$PATH"
