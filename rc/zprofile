@@ -50,7 +50,6 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  ${HOME}/.nix-profile/bin
   ${HOME}/.local/bin
   ${HOME}/.cargo/bin
   ${HOME}/.poetry/bin
@@ -59,6 +58,10 @@ path=(
   /usr/local/{bin,sbin}
   $path
 )
+
+if [[ -s ${HOME}/.nix-profile/etc/profile.d/nix.sh ]]; then
+  source ${HOME}/.nix-profile/etc/profile.d/nix.sh
+fi
 
 fpath=(
   ${HOME}/.zfunc
