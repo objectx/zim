@@ -53,7 +53,7 @@ path=(
   ${HOME}/.local/bin
   ${HOME}/.cargo/bin
   ${HOME}/.poetry/bin
-  $(${HOME}/.nix-profile/bin/python3 -m site --user-base)/bin
+  $(/usr/local/bin/python3 -m site --user-base)/bin
   ${HOME}/Workspace/go/bin
   /usr/local/{bin,sbin}
   $path
