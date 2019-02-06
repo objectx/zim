@@ -6,8 +6,8 @@
 HISTFILE="${ZDOTDIR:-${HOME}}/.zhistory"
 
 # The maximum number of events stored in the internal history list and in the history file.
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000000
+SAVEHIST=1000000
 
 # Perform textual history expansion, csh-style, treating the character ‘!’ specially.
 setopt BANG_HIST
