@@ -98,3 +98,7 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 #
 export GOPATH=${HOME}/Workspace/go
 
+#
+# Java
+#
+export JAVA_HOME="${$(readlink -e $(whence -p javac))%*/bin/javac}"
