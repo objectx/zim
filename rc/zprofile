@@ -52,6 +52,8 @@ typeset -gU cdpath fpath mailpath path
 path=(
   ${HOME}/.local/bin
   ${HOME}/.cargo/bin
+  ${HOME}/.pub-cache/bin
+  ${HOME}/.dotnet/tools
   ${HOME}/.poetry/bin
   $(/usr/local/bin/python3 -m site --user-base)/bin
   ${HOME}/Workspace/go/bin
